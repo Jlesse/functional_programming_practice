@@ -1,0 +1,2 @@
+dispnth([H|_],1,H).
+dispnth([_|T],N,ANS) :- X is N - 1, dispnth(T, X, ANS).

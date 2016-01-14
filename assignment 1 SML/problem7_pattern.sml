@@ -1,0 +1,1 @@
+fun string2intH (nil) = 0     |   string2intH(x::xs) = (string2intH(xs) + ((ord x) - 48))*10;fun rev (nil) = nil     | rev (x::xs) = rev xs @ [x];    fun string2int("") = 0     | string2int(word) = string2intH(rev (explode word)) div 10;    string2int("1234");

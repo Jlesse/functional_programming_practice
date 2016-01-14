@@ -1,0 +1,1 @@
+fun string2intH(L) =    if null(L) then 0 else         (string2intH(tl(L))+((ord (hd(L)) - 48)))*10;fun rev(L) =    if null(L) then nil else        rev(tl(L)) @ [hd(L)];fun string2int(word) =     string2intH(rev(explode word)) div 10;            string2int("1234");

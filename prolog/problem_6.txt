@@ -1,0 +1,4 @@
+
+oddths([],[]).
+
+oddths([H|T], ANS) :- (0 is mod(H, 2) -> ANS = [H|ANS2] ; ANS = ANS2), oddths(T, ANS2).  
